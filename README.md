@@ -3,7 +3,7 @@ Ian Wafer
 
 Fisher Iris Data Set
 
-![Iris Flower](/images/Iris Pic 1.jpg)
+![Iris Flower](/images/irissetosa-1(Resized).jpg)![Iris Flower](/images/irisversicolor(Resized).jpg)![Iris Flower](/images/irisvirginica(Resized).jpg)
 
 Introduction
 
