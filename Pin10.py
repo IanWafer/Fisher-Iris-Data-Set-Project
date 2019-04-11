@@ -1,5 +1,5 @@
-import numpy as np
 import pandas as pd
+import numpy as np
 
 s = pd.Series([1, 3, 5, np.nan, 6, 8])
 
@@ -21,4 +21,7 @@ df.tail(3)
 df.index
 df.columns
 
-df.to_numpy()
+
+df2 = df.copy()
+df2['E'] = ['one', 'one', 'two', 'three', 'four', 'three']
+print(df2)
