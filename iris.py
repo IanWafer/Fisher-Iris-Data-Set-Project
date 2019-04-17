@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 # Shorten code to read iris data set file
 iris = pd.read_csv("input\iris.csv")
 
-# Setup style of graphs to be created. Creat individual graphs species type with breakdown of colour chenged to pallette parameters
+# Setup style of graphs to be created. Creat individual graphs species type with breakdown of colour changed to pallette parameters
 sns.set(style="darkgrid")
 g = sns.relplot(x="sepal_length", y="sepal_width", hue="species", palette=["b", "r", "g"], col="species", data=iris)
 
@@ -41,18 +41,28 @@ j = sns.relplot(x="petal_length", y="petal_width", hue="species", palette=["b", 
 j.fig.suptitle("Overlapping Species Petal Sizes")
 j.set_axis_labels("Petal Length (cm)", "Petal Width (cm)")
 
-#plt.show()
+plt.show()
 
 # Print quantity breakdown for amount and type of data by species in csv file
 print(iris.groupby('species').size())
 
 # This can be used to give a quick breakdown of all the information by column
+print("----------------------Values for all species----------------------")
 breakdown = iris.describe()
 breakdown = breakdown.transpose()
-
-print("----------------------Values for all species----------------------")
 print(breakdown.head())
 
+sns.swarmplot(x="species", y="sepal_length", hue="species", palette=["b", "r", "g"], data=iris)
+plt.show()
+sns.swarmplot(x="species", y="sepal_width", hue="species", palette=["b", "r", "g"], data=iris)
+plt.show()
+sns.swarmplot(x="species", y="petal_length", hue="species", palette=["b", "r", "g"], data=iris)
+plt.show()
+sns.swarmplot(x="species", y="petal_width", hue="species", palette=["b", "r", "g"], data=iris)
+plt.show()
 
+# https://seaborn.pydata.org/tutorial/aesthetics.html
 # https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
 # https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title
+# https://seaborn.pydata.org/generated/seaborn.swarmplot.html
+# https://www.kaggle.com/willvegapunk/iris-data-set
