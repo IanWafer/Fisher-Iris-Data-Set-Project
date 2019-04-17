@@ -18,14 +18,14 @@ g = sns.relplot(x="sepal_length", y="sepal_width", hue="species", palette=["b", 
 # Lower subplot heading to creat room for overall title and change axis labels
 plt.subplots_adjust(top=0.85)
 g.fig.suptitle("Individual Flower Sepal Sizes")
-g.set_axis_labels('Sepal Length (cm)', 'Sepal Width (cm)')
+g.set_axis_labels("Sepal Length (cm)", "Sepal Width (cm)")
 
 # Setup second graph with overlapping species on one graph seperated by colour.
 h = sns.relplot(x="sepal_length", y="sepal_width", hue="species", palette=["b", "r", "g"], data=iris)
 
 # The below adds a title to the combined flower output chart
 h.fig.suptitle("Overlapping Species Sepal Sizes")
-h.set_axis_labels('Sepal Length (cm)', 'Sepal Width (cm)')
+h.set_axis_labels("Sepal Length (cm)", "Sepal Width (cm)")
 
 # Duplicate above for petal dimensions
 
@@ -34,13 +34,25 @@ i = sns.relplot(x="petal_length", y="petal_width", hue="species", palette=["b", 
 
 plt.subplots_adjust(top=0.85)
 i.fig.suptitle("Individual Flower Petal Sizes")
-i.set_axis_labels('Petal Length (cm)', 'Petal Width (cm)')
+i.set_axis_labels("Petal Length (cm)", "Petal Width (cm)")
 
 j = sns.relplot(x="petal_length", y="petal_width", hue="species", palette=["b", "r", "g"], data=iris)
 
 j.fig.suptitle("Overlapping Species Petal Sizes")
-j.set_axis_labels('Petal Length (cm)', 'Petal Width (cm)')
+j.set_axis_labels("Petal Length (cm)", "Petal Width (cm)")
 
-plt.show()
+#plt.show()
+
+# Print quantity breakdown for amount and type of data by species in csv file
+print(iris.groupby('species').size())
+
+# This can be used to give a quick breakdown of all the information by column
+breakdown = iris.describe()
+breakdown = breakdown.transpose()
+
+print("----------------------Values for all species----------------------")
+print(breakdown.head())
+
+
 # https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
 # https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title
