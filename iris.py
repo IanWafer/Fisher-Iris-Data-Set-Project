@@ -43,6 +43,9 @@ j.set_axis_labels("Petal Length (cm)", "Petal Width (cm)")
 
 plt.show()
 
+# Show the first 10 lines of the dataset
+print(iris.head(10))
+
 # Print quantity breakdown for amount and type of data by species in csv file
 print(iris.groupby('species').size())
 
@@ -52,13 +55,24 @@ breakdown = iris.describe()
 breakdown = breakdown.transpose()
 print(breakdown.head())
 
-sns.swarmplot(x="species", y="sepal_length", hue="species", palette=["b", "r", "g"], data=iris)
+sns.violinplot(x="species", y="sepal_length", palette=["b", "r", "g"], data=iris, inner=None)
+sns.swarmplot(x="species", y="sepal_length", data=iris, color="white", edgecolor="gray", size=4)
 plt.show()
-sns.swarmplot(x="species", y="sepal_width", hue="species", palette=["b", "r", "g"], data=iris)
+
+sns.violinplot(x="species", y="sepal_width", palette=["b", "r", "g"], data=iris, inner=None)
+sns.swarmplot(x="species", y="sepal_width", data=iris, color="white", edgecolor="gray", size=4)
 plt.show()
-sns.swarmplot(x="species", y="petal_length", hue="species", palette=["b", "r", "g"], data=iris)
+
+sns.violinplot(x="species", y="petal_length", palette=["b", "r", "g"], data=iris, inner=None)
+sns.swarmplot(x="species", y="petal_length", data=iris, color="white", edgecolor="gray", size=4)
 plt.show()
-sns.swarmplot(x="species", y="petal_width", hue="species", palette=["b", "r", "g"], data=iris)
+
+sns.violinplot(x="species", y="petal_width", palette=["b", "r", "g"], data=iris, inner=None)
+sns.swarmplot(x="species", y="petal_width", data=iris, color="white", edgecolor="gray", size=4)
+plt.show()
+
+tmp = iris.drop('Id', axis=1)
+q = sns.pairplot(iris, hue='Species', markers='+')
 plt.show()
 
 # https://seaborn.pydata.org/tutorial/aesthetics.html
@@ -66,3 +80,5 @@ plt.show()
 # https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title
 # https://seaborn.pydata.org/generated/seaborn.swarmplot.html
 # https://www.kaggle.com/willvegapunk/iris-data-set
+# https://seaborn.pydata.org/generated/seaborn.swarmplot.html
+# https://github.com/mwaskom/seaborn/issues/1007
