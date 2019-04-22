@@ -3,7 +3,7 @@ Ian Wafer
 
 Fisher Iris Data Set
 
-![Iris Flower](/images/irissetosa(Resized).jpg)![Iris Flower](/images/irisversicolor(Resized).jpg)![Iris Flower](/images/irisvirginica(Resized).jpg)
+![Iris Flower](/images/irissetosa(Resized).jpg) Setosa ![Iris Flower](/images/irisversicolor(Resized).jpg) Versicolor ![Iris Flower](/images/irisvirginica(Resized).jpg) Virginica
 
 Project Description
 
@@ -15,7 +15,7 @@ Introduction
 
 The Iris data set is a well known database in pattern recognition originally created by R.A. Fisher in 1936. It is a multivariate collection of four attributes for 3 variations of the Iris flowers. The attributes it covers are the length and width of the sepal and the length and width of the petal in four sperate columns and each row is associated with one of the 3 class' of the Iris plant. 
 
-The Iris classes covered are the Iris Setosa, the Iris Versicolout and the Iris Virginica. Each class of plant has 50 instances of measurements taken in the data set. 
+The Iris classes covered are the Iris Setosa, the Iris Versicolor and the Iris Virginica. Each class of plant has 50 instances of measurements taken in the data set. 
 
 The instructions can be found here- [link](https://github.com/ianmcloughlin/project-pands/raw/master/project.pdf)
 
@@ -29,6 +29,7 @@ The instructions can be found here- [link](https://github.com/ianmcloughlin/proj
 2. Run a command line client (cmder recommended. See here for installer- [link](https://github.com/cmderdev/cmder/releases/download/v1.3.11/cmder.zip)
 3. Ensure you are in the correct directory where each python script is located using the cd command to navigate.
 4. Run the python script by typing iris.py
+
 
 
 Bibliography
