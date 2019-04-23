@@ -25,8 +25,15 @@ print(breakdown.head())
 
 # Define category locations
 setosa = iris[0:50]
-versicolor = iris[51:101]
-virginica = iris[102:151]
+versicolor = iris[50:100]
+virginica = iris[100:151]
+
+print('----------------------Iris Setosa Values----------------------')
+print(setosa.describe())
+print('----------------------Iris Versicolor Values----------------------')
+print(versicolor.describe())
+print('----------------------Iris Virginica Values----------------------')
+print(virginica.describe())
 
 # Plot overlapping histograms of each flower categories properties with axis and labels present
 sns.distplot(setosa['sepal_length'], color='b', kde=False, label='Setosa')
@@ -35,7 +42,7 @@ sns.distplot(virginica['sepal_length'], color='g', kde=False, label='Virginica')
 plt.legend()
 plt.xlabel('Sepal Length (cm)')  
 plt.ylabel('Quantity')  
-plt.savefig('images\Hist-Sepal Length.png')
+plt.savefig('images\Outputs\Hist-Sepal Length.png')
 plt.show()
 
 sns.distplot(setosa['sepal_width'], color='b', kde=False, label='Setosa')
@@ -44,7 +51,7 @@ sns.distplot(virginica['sepal_width'], color='g', kde=False, label='Virginica')
 plt.legend()
 plt.xlabel('Sepal Width (cm)')  
 plt.ylabel('Quantity')  
-plt.savefig('images\Hist-Sepal Width.png')
+plt.savefig('images\Outputs\Hist-Sepal Width.png')
 plt.show()
 
 sns.distplot(setosa['petal_length'], color='b', kde=False, label='Setosa')
@@ -53,7 +60,7 @@ sns.distplot(virginica['petal_length'], color='g', kde=False, label='Virginica')
 plt.legend()
 plt.xlabel('Petal Length (cm)')  
 plt.ylabel('Quantity')  
-plt.savefig('images\Hist-Petal Length.png')
+plt.savefig('images\Outputs\Hist-Petal Length.png')
 plt.show()
 
 sns.distplot(setosa['petal_width'], color='b', kde=False, label='Setosa')
@@ -62,7 +69,7 @@ sns.distplot(virginica['petal_width'], color='g', kde=False, label='Virginica')
 plt.legend()
 plt.xlabel('Petal Width (cm)')  
 plt.ylabel('Quantity')  
-plt.savefig('images\Hist-Petal Width.png')
+plt.savefig('images\Outputs\Hist-Petal Width.png')
 plt.show()
 
 # Setup style of graphs to be created. Creat individual graphs species type with breakdown of colour changed to pallette parameters
@@ -100,26 +107,26 @@ plt.show()
 # Setup for violinplot display with datapoints highlighted in white using swarmplot and print graph 
 sns.violinplot(x='species', y='sepal_length', palette=['b', 'r', 'g'], data=iris, inner=None)
 sns.swarmplot(x='species', y='sepal_length', data=iris, color='white', edgecolor='gray', size=4)
-plt.savefig('images\Violin-Sepal Length.png')
+plt.savefig('images\Outputs\Violin-Sepal Length.png')
 plt.show()
 
 sns.violinplot(x='species', y='sepal_width', palette=['b', 'r', 'g'], data=iris, inner=None)
 sns.swarmplot(x='species', y='sepal_width', data=iris, color='white', edgecolor='gray', size=4)
-plt.savefig('images\Violin-Sepal Width.png')
+plt.savefig('images\Outputs\Violin-Sepal Width.png')
 plt.show()
 
 sns.violinplot(x='species', y='petal_length', palette=['b', 'r', 'g'], data=iris, inner=None)
 sns.swarmplot(x='species', y='petal_length', data=iris, color='white', edgecolor='gray', size=4)
-plt.savefig('images\Violin-Petal Length.png')
+plt.savefig('images\Outputs\Violin-Petal Length.png')
 plt.show()
 
 sns.violinplot(x='species', y='petal_width', palette=['b', 'r', 'g'], data=iris, inner=None)
 sns.swarmplot(x='species', y='petal_width', data=iris, color='white', edgecolor='gray', size=4)
-plt.savefig('images\Violin-Petal Width.png')
+plt.savefig('images\Outputs\Violin-Petal Width.png')
 plt.show()
 
 sns.pairplot(hue='species', markers='x', data=iris, palette=['b', 'r', 'g'])
-plt.savefig('images\pairplot.png')
+plt.savefig('images\Outputs\pairplot.png')
 plt.show()
 
 # https://seaborn.pydata.org/tutorial/aesthetics.html
