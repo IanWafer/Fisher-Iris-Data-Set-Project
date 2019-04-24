@@ -98,12 +98,3 @@ sns.pairplot(hue='species', markers='o', data=iris, palette=['b', 'r', 'g'])
 plt.savefig('images\Outputs\pairplot.png')
 plt.show()
 
-# https://seaborn.pydata.org/tutorial/aesthetics.html
-# https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
-# https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title
-# https://seaborn.pydata.org/generated/seaborn.swarmplot.html
-# https://www.kaggle.com/willvegapunk/iris-data-set
-# https://seaborn.pydata.org/generated/seaborn.swarmplot.html
-# https://github.com/mwaskom/seaborn/issues/1007
-# https://seaborn.pydata.org/generated/seaborn.distplot.html
-# http://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/

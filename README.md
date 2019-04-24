@@ -22,15 +22,23 @@ The instructions issued to us can be found here- [link](https://github.com/ianmc
 
 ## Table of Contents
 
-1. [Introduction](##introduction)
+1. [Introduction](#introduction)
 
-2. [Initial Data Review](##initialreview)
+2. [Initial Data Review](#initialreview)
 
-3. 
+3. [Visualisation Of Data](#visualisation)
 
-4. 
+    3.1 [Histogrmas](#hist)
 
-<a name="introduction"/>
+    3.2 [Violinplots](#vio)
+
+    3.3 [Pairplot](#sca)
+
+4. [Concluding Remarks](#conc)
+
+5. [Bibliogrpahy](#bibliography)
+
+<a name="introduction"></a>
 ## 1. Introduction 
 
 The Iris data set is a well known database in pattern recognition originally created by R.A. Fisher and published in his 1936 paper *The use of multiple measurements in taxonomic problems*. It is a multivariate collection of four attributes for 3 variations of the Iris flowers. The attributes it covers are the length and width of the sepal and the length and width of the petal measured in centimeters in four sperate columns and each row is associated with one of the 3 class' of the Iris plant. 
@@ -79,9 +87,13 @@ This is then further broken down by species shown below-
 
 From this data it's clear the petal length is a clear outlier for idetying the Iris Setosa flower type. With further investigation we can determine more features to identify the correct flower type.
 
+<a name="visualisation"></a>
+
 ## 3. Visualisation Of Data
 
-### <u>Histograms</u>
+<a name="hist"></a>
+
+### 3.1 <u>Histograms</u>
 From the histogram plot we can compare the quantites of each flower petal and sepal dimension to deterimine the realitive density of the values. From this we can see that the flower sepals have a lot of overlap. While overlap still exists between the virginica and versicolour petal sizes, it would still be a much greater method of identification between the different flower types as a unique idetifier. As we can see below the Setosa flower is very clearly distinguished from the virginica and versicolour flowers being a much smaller petal size. As we can see below this does not carry over to the sepal. From the 2 sepal grpahs below we can see that while the sepal might be short in length it has a larger width in most cases compared to the virginica and versicolour plants.
 
 ![Histo Petal Length](/images/Outputs/Hist-Petal_Length.png)
@@ -92,7 +104,9 @@ From the histogram plot we can compare the quantites of each flower petal and se
 
 ![Histo Sepal Width](/images/Outputs/Hist-Sepal_Width.png)
 
-### <u>Violinplots</u>
+<a name="vio"></a>
+
+### 3.2 <u>Violinplots</u>
 
 The violin plot is a method of graphically depicting numerical data through their quartiles with a rotated kernal density plot on each side. They can be used for showing the probability density at different values showing a full distribution of the data. This shows us the typical ranges of the petal and sepal dimensions with any great number of clustered values giving a greater visula impact through the larger dimension shown on the plot.
 
@@ -104,38 +118,40 @@ The violin plot is a method of graphically depicting numerical data through thei
 
 ![Violin Sepal Width](/images/Outputs/Violin-Sepal_Width.png)
 
-### <u>Pairplot</u>
+<a name="sca"></a>
+
+### 3.3 <u>Pairplot</u>
 
 Scatterplots are used for displaying information across three variables with colour coding for a data set. From the below images you can clearly see the setosa plant can be seperated and easily identified using its petal dimensions. This is not as clear cut for the versicolour and virginica though as there is considerable overlap even if we do see that the virginica does trend toward the larger size petal and sepal.
 
 ![Pair Plot](/images/Outputs/pairplot.png)
 
-## 4. Findings
+<a name="conc"></a>
 
+## 4. Concluding Remarks
 
+<a name="bibliography"></a>
 
 ## 5. Bibliography
 
-1- https://archive.ics.uci.edu/ml/datasets/iris
+Archive.ics.uci.edu. (2019). UCI Machine Learning Repository: Iris Data Set. [online] Available at: https://archive.ics.uci.edu/ml/datasets/iris 
 
-2- https://www.kaggle.com/mjbahmani/20-ml-algorithms-15-plot-for-beginners
+ Kaggle.com. (2019). +20 ML Algorithms +15 Plot for Beginners | Kaggle. [online] Available at: https://www.kaggle.com/mjbahmani/20-ml-algorithms-15-plot-for-beginners.
 
-3- https://www.kaggle.com/aschakra/iris-data-visualization-using-python
+Kaggle.com. (2019). Iris Data Visualization using Python | Kaggle. [online] Available at: https://www.kaggle.com/aschakra/iris-data-visualization-using-python.
 
-4- https://seaborn.pydata.org/tutorial/aesthetics.html
+Seaborn.pydata.org. (2019). Controlling figure aesthetics — seaborn 0.9.0 documentation. [online] Available at: https://seaborn.pydata.org/tutorial/aesthetics.html.
 
-5- https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
+Seaborn.pydata.org. (2019). seaborn.FacetGrid — seaborn 0.9.0 documentation. [online] Available at: https://seaborn.pydata.org/generated/seaborn.FacetGrid.html.
 
-6- https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title
+title, s. (2019). seaborn relplot: how to control the location of the legend and add title. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title.
 
-7- https://seaborn.pydata.org/generated/seaborn.swarmplot.html
+Seaborn.pydata.org. (2019). seaborn.swarmplot — seaborn 0.9.0 documentation. [online] Available at: https://seaborn.pydata.org/generated/seaborn.swarmplot.html [Accessed 24 Apr. 2019].
 
-8- https://www.kaggle.com/willvegapunk/iris-data-set
+Kaggle.com. (2019). Iris Data Set | Kaggle. [online] Available at: https://www.kaggle.com/willvegapunk/iris-data-set.
 
-9- https://seaborn.pydata.org/generated/seaborn.swarmplot.html
+GitHub. (2019). Violins out of alignment · Issue #1007 · mwaskom/seaborn. [online] Available at: https://github.com/mwaskom/seaborn/issues/1007 [Accessed 24 Apr. 2019].
 
-10- https://github.com/mwaskom/seaborn/issues/1007
+Seaborn.pydata.org. (2019). seaborn.distplot — seaborn 0.9.0 documentation. [online] Available at: https://seaborn.pydata.org/generated/seaborn.distplot.html.
 
-11- https://seaborn.pydata.org/generated/seaborn.distplot.html
-
-12- http://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
+Python, R, and Linux Tips. (2019). How To Make Histogram in Python with Pandas and Seaborn?. [online] Available at: http://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/.
