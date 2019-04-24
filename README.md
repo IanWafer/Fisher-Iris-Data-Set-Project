@@ -64,27 +64,27 @@ The instructions can be found here- [link](https://github.com/ianmcloughlin/proj
 
 Initially on my review I first imported the modules required to run the analysis of the data set as shown below-
 
-![Imported Modules](/images/ImportedModules.png)
+![Imported Modules](/images/ImportedModules.PNG)
 
 With the required modules imported the read file function was shorted to make it more user friendly in code design and the first ten lines read and output as shown below using the .head() function-
 
-![Iris Read](/images/IrisRead.png)
+![Iris Read](/images/IrisRead.PNG)
 
-![Iris Head](/images/IrisHead.png)
+![Iris Head](/images/IrisHead.PNG)
 
 The size of each grouping broken down by species was then determined using the groupby and size function together shown below with results displyed below the code-
 
-![Iris Group By Size](/images/IrisGroupBySize.png)
+![Iris Group By Size](/images/IrisGroupBySize.PNG)
 
-![Iris Group By Size Results](/images/IrisGroupBySizeResults.png)
+![Iris Group By Size Results](/images/IrisGroupBySizeResults.PNG)
 
 Follwing this some quick statistics of the overall data set and dimensions was determined using the .describe function and transposed to display a horizontal table-
 
-![Iris Describe](/images/IrisDescribe.png)
+![Iris Describe](/images/IrisDescribe.PNG)
 
 This is then further broken down by species shown below-
 
-![Iris Species Describe](/images/IrisSpeciesDescribe.png)
+![Iris Species Describe](/images/IrisSpeciesDescribe.PNG)
 
 From this data it's clear the petal length is a clear outlier for idetying the Iris Setosa flower type. With further investigation we can determine more features to identify the correct flower type.
 
