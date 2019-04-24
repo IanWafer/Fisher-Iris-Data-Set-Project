@@ -59,6 +59,7 @@ The instructions can be found here- [link](https://github.com/ianmcloughlin/proj
 4. Run the python script by typing iris.py
 
 <a name="initialreview"></a>
+
 ## 2. Initial Data Review 
 
 Initially on my review I first imported the modules required to run the analysis of the data set as shown below-
@@ -129,6 +130,8 @@ Scatterplots are used for displaying information across three variables with col
 <a name="conc"></a>
 
 ## 4. Concluding Remarks
+
+The Iris Dataset was used to give me a broad understanding of a multitude of features for analysing and gaining statistical information from a set of data. I discovered how to use a number of features from the pandas, numpy, seaborn and matplotlib libraries. I used functions to determine a breakdown of the information, the average of the columns, the standard deviations, min and max values. I also learned to use numerous chart types and how to manipulate the grpahs, labels etc. to visualise the data in a suitable manner. 
 
 <a name="bibliography"></a>
 
