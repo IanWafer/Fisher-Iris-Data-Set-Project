@@ -28,11 +28,11 @@ The instructions issued to us can be found here- [link](https://github.com/ianmc
 
 3. [Visualisation Of Data](#visualisation)
 
-    3.1 [Histogrmas](#hist)
+    3.1 [Histograms](#hist)
 
     3.2 [Violinplots](#vio)
 
-    3.3 [Pairplot](#sca)
+    3.3 [Scatterplots](#sca)
 
 4. [Concluding Remarks](#conc)
 
@@ -121,7 +121,7 @@ The violin plot is a method of graphically depicting numerical data through thei
 
 <a name="sca"></a>
 
-### 3.3 <u>Pairplot</u>
+### 3.3 <u>Scatterplots</u>
 
 Scatterplots are used for displaying information across three variables with colour coding for a data set. From the below images you can clearly see the setosa plant can be seperated and easily identified using its petal dimensions. This is not as clear cut for the versicolour and virginica though as there is considerable overlap even if we do see that the virginica does trend toward the larger size petal and sepal.
 
