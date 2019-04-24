@@ -20,9 +20,20 @@ This is a project set out by Ian Mcloughin for the programming and scripting mod
 
 The instructions issued to us can be found here- [link](https://github.com/ianmcloughlin/project-pands/raw/master/project.pdf)
 
-## Introduction
+## Table of Contents
 
-The Iris data set is a well known database in pattern recognition originally created by R.A. Fisher and published in his 1936 paper *The use of multiple measurements in taxonomic problems*. It is a multivariate collection of four attributes for 3 variations of the Iris flowers. The attributes it covers are the length and width of the sepal and the length and width of the petal in four sperate columns and each row is associated with one of the 3 class' of the Iris plant. 
+1. [Introduction](##introduction)
+
+2. [Initial Data Review](##initialreview)
+
+3. 
+
+4. 
+
+<a name="introduction"/>
+## 1. Introduction 
+
+The Iris data set is a well known database in pattern recognition originally created by R.A. Fisher and published in his 1936 paper *The use of multiple measurements in taxonomic problems*. It is a multivariate collection of four attributes for 3 variations of the Iris flowers. The attributes it covers are the length and width of the sepal and the length and width of the petal measured in centimeters in four sperate columns and each row is associated with one of the 3 class' of the Iris plant. 
 
 The Iris classes covered are the [Iris Setosa](https://en.wikipedia.org/wiki/Iris_setosa), the [Iris Versicolor](https://en.wikipedia.org/wiki/Iris_versicolor) and the [Iris Virginica](https://en.wikipedia.org/wiki/Iris_virginica). Each class of plant has 50 instances of measurements taken in the data set. 
 
@@ -39,7 +50,8 @@ The instructions can be found here- [link](https://github.com/ianmcloughlin/proj
 3. Ensure you are in the correct directory where each python script is located using the cd command to navigate.
 4. Run the python script by typing iris.py
 
-## Initial Data Review
+<a name="initialreview"></a>
+## 2. Initial Data Review 
 
 Initially on my review I first imported the modules required to run the analysis of the data set as shown below-
 
@@ -65,14 +77,65 @@ This is then further broken down by species shown below-
 
 ![Iris Species Describe](/images/IrisSpeciesDescribe.png)
 
-## Visualisation Of Data
+From this data it's clear the petal length is a clear outlier for idetying the Iris Setosa flower type. With further investigation we can determine more features to identify the correct flower type.
 
-## Findings
+## 3. Visualisation Of Data
+
+### <u>Histograms</u>
+From the histogram plot we can compare the quantites of each flower petal and sepal dimension to deterimine the realitive density of the values. From this we can see that the flower sepals have a lot of overlap. While overlap still exists between the virginica and versicolour petal sizes, it would still be a much greater method of identification between the different flower types as a unique idetifier. As we can see below the Setosa flower is very clearly distinguished from the virginica and versicolour flowers being a much smaller petal size. As we can see below this does not carry over to the sepal. From the 2 sepal grpahs below we can see that while the sepal might be short in length it has a larger width in most cases compared to the virginica and versicolour plants.
+
+![Histo Petal Length](/images/Outputs/Hist-Petal_Length.png)
+
+![Histo Petal Width](/images/Outputs/Hist-Petal_Width.png)
+
+![Histo Sepal Length](/images/Outputs/Hist-Sepal_Length.png)
+
+![Histo Sepal Width](/images/Outputs/Hist-Sepal_Width.png)
+
+### <u>Violinplots</u>
+
+The violin plot is a method of graphically depicting numerical data through their quartiles with a rotated kernal density plot on each side. They can be used for showing the probability density at different values showing a full distribution of the data. This shows us the typical ranges of the petal and sepal dimensions with any great number of clustered values giving a greater visula impact through the larger dimension shown on the plot.
+
+![Violin Petal Length](/images/Outputs/Violin-Petal_Length.png)
+
+![Violin Petal Width](/images/Outputs/Violin-Petal_Width.png)
+
+![Violin Sepal Length](/images/Outputs/Violin-Sepal_Length.png)
+
+![Violin Sepal Width](/images/Outputs/Violin-Sepal_Width.png)
+
+### <u>Pairplot</u>
+
+Scatterplots are used for displaying information across three variables with colour coding for a data set. From the below images you can clearly see the setosa plant can be seperated and easily identified using its petal dimensions. This is not as clear cut for the versicolour and virginica though as there is considerable overlap even if we do see that the virginica does trend toward the larger size petal and sepal.
+
+![Pair Plot](/images/Outputs/pairplot.png)
+
+## 4. Findings
 
 
 
-Bibliography
+## 5. Bibliography
 
-https://archive.ics.uci.edu/ml/datasets/iris
-https://www.kaggle.com/mjbahmani/20-ml-algorithms-15-plot-for-beginners
-https://www.kaggle.com/aschakra/iris-data-visualization-using-python
+1- https://archive.ics.uci.edu/ml/datasets/iris
+
+2- https://www.kaggle.com/mjbahmani/20-ml-algorithms-15-plot-for-beginners
+
+3- https://www.kaggle.com/aschakra/iris-data-visualization-using-python
+
+4- https://seaborn.pydata.org/tutorial/aesthetics.html
+
+5- https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
+
+6- https://stackoverflow.com/questions/54209895/seaborn-relplot-how-to-control-the-location-of-the-legend-and-add-title
+
+7- https://seaborn.pydata.org/generated/seaborn.swarmplot.html
+
+8- https://www.kaggle.com/willvegapunk/iris-data-set
+
+9- https://seaborn.pydata.org/generated/seaborn.swarmplot.html
+
+10- https://github.com/mwaskom/seaborn/issues/1007
+
+11- https://seaborn.pydata.org/generated/seaborn.distplot.html
+
+12- http://cmdlinetips.com/2019/02/how-to-make-histogram-in-python-with-pandas-and-seaborn/
