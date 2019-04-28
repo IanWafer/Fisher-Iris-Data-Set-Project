@@ -38,8 +38,8 @@ print('')
 print('----------------------Iris Virginica Values----------------------')
 print(virginica.describe())
 print('')
-exit()
-# Plot overlapping histograms of each flower categories properties with axis and labels present
+
+# Plot overlapping histograms of each flower categories properties with default axis and labels overwritten with Names below. Remove kde line and colour code according to the colours denoted below.
 sns.set(style='darkgrid')
 sns.distplot(setosa['sepal_length'], color='b', kde=False, label='Setosa')
 sns.distplot(versicolor['sepal_length'], color='r', kde=False, label='Versicolor')
