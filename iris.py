@@ -22,6 +22,7 @@ print('----------------------Values for all species----------------------')
 breakdown = iris.describe()
 breakdown = breakdown.transpose()
 print(breakdown.head())
+print('')
 
 # Define category locations
 setosa = iris[0:50]
@@ -30,11 +31,14 @@ virginica = iris[100:151]
 
 print('----------------------Iris Setosa Values----------------------')
 print(setosa.describe())
+print('')
 print('----------------------Iris Versicolor Values----------------------')
 print(versicolor.describe())
+print('')
 print('----------------------Iris Virginica Values----------------------')
 print(virginica.describe())
-
+print('')
+exit()
 # Plot overlapping histograms of each flower categories properties with axis and labels present
 sns.set(style='darkgrid')
 sns.distplot(setosa['sepal_length'], color='b', kde=False, label='Setosa')
